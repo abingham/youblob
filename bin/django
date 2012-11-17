@@ -1,0 +1,37 @@
+#!/Users/abingham/sandbox/startup_weekend/webshop/env/bin/python
+
+import sys
+sys.path[0:0] = [
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_lfs-0.7.6-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/gunicorn-0.15.0-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/djangorecipe-1.1.2-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/Django-1.3.1-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/zc.recipe.egg-1.3.2-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/zc.buildout-1.6.3-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/South-0.7.3-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/Pillow-1.7.5-py2.7-macosx-10.6-intel.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/lfs_order_numbers-1.0b1-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/lfs_contact-1.0-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_tagging-0.3.1-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_reviews-0.2.1-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_postal-0.9-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_portlets-1.1.1-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_paypal-0.1.2-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_pagination-1.0.7-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_lfstheme-0.7.3-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_compressor-1.1.1-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/setuptools-0.6c12dev_r88846-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_piston-0.2.3-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_countries-1.4-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/django_appconf-0.5-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/parts/django',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/parts',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/lfs_project',
+    ]
+
+
+import djangorecipe.manage
+
+if __name__ == '__main__':
+    sys.exit(djangorecipe.manage.main('lfs_project.settings'))

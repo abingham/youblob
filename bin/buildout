@@ -1,0 +1,13 @@
+#!/Users/abingham/sandbox/startup_weekend/webshop/env/bin/python
+
+import sys
+sys.path[0:0] = [
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/setuptools-0.6c12dev_r88846-py2.7.egg',
+    '/Users/abingham/sandbox/startup_weekend/webshop/lfs-installer/eggs/zc.buildout-1.6.3-py2.7.egg',
+    ]
+
+
+import zc.buildout.buildout
+
+if __name__ == '__main__':
+    sys.exit(zc.buildout.buildout.main())
